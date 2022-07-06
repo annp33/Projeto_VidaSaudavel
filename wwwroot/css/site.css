@@ -1,0 +1,146 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+header h1{
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+h1{
+  text-align: center;
+  font-size: 35px;  
+  color: rgb(0, 55, 128);
+  font-weight: 600;
+}
+
+h2{
+  font-size: 30px;
+  color: rgb(0, 55, 128);
+  font-weight: 600;
+}
+
+h5{
+  color: rgb(160, 0, 0);
+}
+
+#linha1, #linha2{
+  padding-top: 30px;  
+  margin: auto;
+}
+
+#linha1 p, #linha2 > div > p{
+  text-align: justify;
+}
+
+#linha1 img{
+  padding-top: 10px;
+}
+
+.bnt{
+  background-color: rgb(0, 55, 128);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+.bnt:hover{
+  background-color: rgb(1, 78, 179);
+}
+
+#links{
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+#links img{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+a{
+  color: rgb(1, 78, 179);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center; 
+  margin: 0px;
+}
+
+a:hover{
+  color: rgb(66, 136, 228);
+  text-decoration: none;
+}
+
+footer p{
+  color: rgb(0, 55, 128);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #linha2{
+    margin-top: 10px;
+  }
+  
+  #links{
+    margin-top: 20px;
+  }
+  
+  #links img{
+    width: 70%;
+  }
+}
+
+.popup-wrapper1, .popup-wrapper2, .popup-wrapper3{
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.popup{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 2% auto;
+  padding: 30px;
+  background: white;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.popup p, .popup h4{
+  text-align: justify;
+}
+
+.popup h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popup-wrapper3 > .popup > .popup-content > div{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.popup-content img{
+  margin-right: 10px;
+  width: 90px;
+}
+
+
+

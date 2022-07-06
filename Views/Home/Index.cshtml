@@ -1,0 +1,134 @@
+﻿@model Interesse
+@{
+    ViewData["Title"] = "Hotsite";
+}
+
+<div id="linha1" class="container-fluid d-flex row">
+    <div class="col-sm-12 col-md-5">
+        <h1>Iniciativa Saúde da Cidade</h1>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+    
+    <div class="col-sm-12 col-md-7">
+        <img src="~/img/banner1.jpg" alt="" width="100%">
+    </div>
+</div>
+
+<div id="linha2" class="container-fluid d-flex row">
+    <div class="col-sm-12 col-md-5">
+        <h2>Entre em contato!</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos.</p>
+    
+        <form method="POST" id="frmCadastro">
+            <div class="form-group">
+                <label asp-for="Nome">Nome:</label>
+                <input asp-for="Nome" id="nome" class="form-control" type="text" required />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email">Email:</label>
+                <input asp-for="Email" id="email" class="form-control" type="email" required/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mensagem">Mensagem (opcional):</label>
+                <textarea asp-for="Mensagem" id="mensagem" class="form-control" type="textarea"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="bnt" id="btnSubmit"/>
+            </div>
+        </form>
+        
+        <!-- <h5>@ViewBag.Mensagem</h5> -->
+    </div>
+    
+    <div id="links" class="container-fluid row d-flex col-md-7">
+        <div class="col-sm-12 col-md-4">
+            <a href="#" id="agenda"><img src="~/img/banner2.jpg" alt=""><p>Agenda de eventos</p></a>
+        </div>
+    
+        <div class="col-sm-12 col-md-4">
+            <a href="#" id="dicas"><img src="~/img/banner3.jpg" alt=""><p>Dicas de vida saudável</p></a>
+        </div>
+    
+        <div class="col-sm-12 col-md-4">   
+            <a href="#" id="apoiadores"><img src="~/img/banner4.jpg" alt=""><p>Apoiadores</p></a>
+        </div>
+    </div>
+
+    <div class="popup-wrapper1">
+        <div class="popup">
+            <div class="popup-content">
+                <h3>Agenda</h3>
+                <p>10/10/10 10:10 - Evento 1</p>
+                <p>Lorem ipsum  amet sit. Nam, perspiciatis explicabo ea earum soluta quas, mollitia suscipit  possimus. Eos incidunt placeat in ipsam distinctio aut.</p>
+                <p>10/10/10 10:10 - Evento 2</p>
+                <p>Lorem ipsum  amet sit. Nam, perspiciatis explicabo ea earum soluta quas, mollitia suscipit  possimus. Eos incidunt placeat in ipsam distinctio aut.</p>
+                <p>10/10/10 10:10 - Evento 3</p>
+                <p>Lorem ipsum  amet sit. Nam, perspiciatis explicabo ea earum soluta quas, mollitia suscipit  possimus. Eos incidunt placeat in ipsam distinctio aut.</p>
+                <div class="popup1-close"></div><a href="#"><button class="bnt" id="botao1">Fechar</button></a></div>
+            </div>
+        </div>
+    </div>
+
+        <div class="popup-wrapper2">
+        <div class="popup">
+            <div class="popup-content">
+                <h3>Dicas de Vida Saudável</h3>
+                <p>Lorem ipsum  amet sit. Nam, perspiciatis explicabo ea earum soluta quas, mollitia suscipit  possimus. Eos incidunt placeat in ipsam distinctio aut. Lorem ipsum  amet sit. Eos incidunt placeat in ipsam distinctio aut.
+                </p>
+
+                <p>Lorem ipsum  amet sit. Nam, perspiciatis explicabo ea earum soluta quas, mollitia suscipit  possimus. Eos incidunt placeat in ipsam distinctio aut. Lorem ipsum  amet sit. Eos incidunt placeat in ipsam distinctio aut.</p>
+
+                <p>Lorem ipsum  amet sit. Nam, perspiciatis explicabo ea earum soluta quas, mollitia suscipit  possimus. Eos incidunt placeat in ipsam distinctio aut. Eos incidunt placeat in ipsam distinctio aut.</p>
+                <div class="popup2-close"></div><a href="#"><button class="bnt" id="botao2">Fechar</button></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper3">
+        <div class="popup">
+            <div class="popup-content">
+                <h3>Apoiadores</h3>
+                <div>
+                    <img src="~/img/empresa1.jpg" alt="">
+                    <div>
+                        <h4>Empresa 1</h4>
+                        <p>Lorem ipsum  amet sit. Eos incidunt placeat in ipsam distinctio aut.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div><img src="~/img/empresa2.jpg" alt=""></div>
+                    <div>
+                        <h4>Empresa 2</h4>
+                        <p>Lorem ipsum  amet sit. Eos incidunt placeat in ipsam distinctio aut.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div><img src="~/img/empresa3.jpg" alt=""></div>
+                    <div>
+                        <h4>Empresa 3</h4>
+                        <p>Lorem ipsum  amet sit. Eos incidunt placeat in ipsam distinctio aut.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div><img src="~/img/empresa4.jpg" alt=""></div>
+                    <div>
+                        <h4>Empresa 4</h4>
+                        <p>Lorem ipsum  amet sit. Eos incidunt placeat in ipsam distinctio aut.</p>
+                    </div>
+                </div>
+
+                <div class="popup3-close" ></div><a href="#"><button class="bnt" id="botao3">Fechar</button></a></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
