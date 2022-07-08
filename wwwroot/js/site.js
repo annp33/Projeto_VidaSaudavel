@@ -8,7 +8,7 @@ function Cadastrar(){
     let parametros = {
         Nome: $("#nome").val(),
         Email: $("#email").val(),
-        Mensagem: $("mensagem").val(),
+        Mensagem: $("#mensagem").val(),
     }
 
     // Envia os dados do formulário para o servidor
